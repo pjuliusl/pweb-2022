@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Digite seu nome:</label> <br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="pet">Dentre as 4 opções, escolha um pet:</label> <br>
+
+        <input type="radio" id="cachorro" name="fav_pet" value="cachorro" required>
+        <label for="cachorro">Cachorro</label><br>
+        <label for="cachorro"><img src="assets/dog.jpg" alt="Cachorro" style="height: 150px; width: 150px;"></label> <br>
+
+        <input type="radio" id="gato" name="fav_pet" value="gato">
+        <label for="gato">Gato</label><br>
+        <label for="gato"><img src="assets/cat.jpg" alt="Gato" style="height: 150px; width: 150px;"></label> <br>
+
+        <input type="radio" id="macaco" name="fav_pet" value="macaco">
+        <label for="macaco">Macaco</label> <br>
+        <label for="macaco"><img src="assets/monkey.jpg" alt="Macaco" style="height: 150px; width: 150px;"></label> <br>
+
+        <input type="radio" id="hamster" name="fav_pet" value="hamster">
+        <label for="hamster">Hamster</label> <br>
+        <label for="hamster"><img src="assets/hamster.jpg" alt="Hamster" style="height: 150px; width: 150px;"></label> <br>
+
+        <label for="message">Diga o motivo da escolha: </label> <br>
+        <textarea id="message" style="height: 100px; width: 300px;" ></textarea> <br>
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+</body>
+
+</html>
