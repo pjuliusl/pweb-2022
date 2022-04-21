@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <title>Pergunta 1</title>
+    </head>
+
+    <body>
+        <header class="main-section">
+            <h1>Escolha sua opção de Quiz:</h1>
+                <ul class="main-decision">
+                    <li><a href="index.html">Quiz - Cookies</a></li>
+                    <li><a href="indexsessions.html">Quiz - Sessions</a></li>
+                </ul>
+        </header>
+
+        <section class="main-quiz">
+            <h2 class="main-title">Pergunta 1</h2>
+            <h3 class="main-title -change">Em que ano foi criada a linguagem JavaScript?</h3>
+
+            <section class="wrapper-items">
+                <form action="question02_cookies.php" method="post" onsubmit="return validaForm()">
+                    <input type="radio" name="question1" value="1995js">Em 1995<br>
+                    <input type="radio" name="question1" value="2000js">Em 2000<br>
+                    <input type="radio" name="question1" value="1997js">Em 1997<br>
+                    <input type="radio" name="question1" value="1993js">Em 1993<br>
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar">
+                </form>
+                <br>
+            </section>
+            <img class="image" src="img/JavaScript.jpg" alt="JavaScript"  width="384" height="216">
+        </section>
+
+        <script>
+            function validaForm(){
+                var radios = document.getElementsByName("question1");
+                var formValido = false;
+
+                var i = 0;
+                while (!formValido && i < radios.length) {
+                    if(radios[i].checked) formValido = true;
+                    i++;        
+                }
+
+                if (!formValido) alert("Escolha uma alternativa");
+                return formValido;
+            }
+        </script>
+    </body>
+</html>
